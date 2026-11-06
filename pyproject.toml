@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-agri-gnn"
+version = "0.1.0"
+description = "Production pipeline for Uganda crop-yield graph modelling extracted from project_b.ipynb."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "geopandas>=1.0",
+  "joblib>=1.4",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pyarrow>=16.0",
+  "requests>=2.32",
+  "scikit-learn>=1.5",
+]
+
+[project.optional-dependencies]
+gnn = [
+  "torch>=2.2",
+  "torch-geometric>=2.5",
+]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+smart-agri-gnn = "smart_agri_gnn.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

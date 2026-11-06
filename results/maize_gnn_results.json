@@ -1,0 +1,26 @@
+{
+  "dataset": "Uganda Maize GNN Dataset",
+  "yield_forecasting": {
+    "random_forest": {
+      "mae": 0.15700005531311026,
+      "rmse": 0.16562010647546072,
+      "r2": 0.6447910683333782
+    },
+    "graphsage": {
+      "mae": 0.13234908878803253,
+      "rmse": 0.15156394721844488,
+      "r2": 0.7025256156921387
+    },
+    "mae_improvement_percent": 15.701247031993404
+  },
+  "disease_surveillance": {
+    "random_forest": {
+      "accuracy": 1.0,
+      "f1": 1.0
+    },
+    "graphsage": {
+      "accuracy": 1.0,
+      "f1": 1.0
+    }
+  }
+}

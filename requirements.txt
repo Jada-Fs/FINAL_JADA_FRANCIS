@@ -1,0 +1,33 @@
+# Uganda Smart Agriculture GNN System – Requirements
+# ====================================================
+# Core scientific computing
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+scipy>=1.12
+
+# Geospatial
+geopandas>=1.0
+
+# Visualisation
+matplotlib>=3.8
+seaborn>=0.13
+plotly>=5.18
+folium>=0.15
+streamlit-folium>=0.18
+
+# Dashboard
+streamlit>=1.32
+
+# Model persistence
+joblib>=1.4
+
+# Data formats
+pyarrow>=16.0
+
+# HTTP requests (for data acquisition)
+requests>=2.32
+
+# Optional: GNN (install separately – see below)
+# torch>=2.2
+# torch-geometric>=2.5
